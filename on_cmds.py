@@ -51,7 +51,7 @@ async def form_(ctx, type):
                 await ctx.send("`{0.author.nick}` sent `previous file`".format(ctx))
             
             out = "```" + type + "\n"
-            handler = open("./tmp/tmpfile", "r")
+            handler = open("./tmp/tmpfile." + type, "r")
 
             for line in handler:
                 out += line;
